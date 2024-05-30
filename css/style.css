@@ -184,7 +184,7 @@ img#logo{
     font-size: large;
 }
 .filtre_icon_text:hover > .filtre_texte{
-    background-color: var(--main-bg-color);
+    background-color: var(--filter-bg-color);
     opacity: 0.75;
     cursor: pointer;
 }
@@ -463,18 +463,14 @@ footer .assistance{
 @media (max-width: 1024px) {
     main {
         max-width: 1024px;
-        -ms-flex-align: center;
-        
+        width: 95%;        
     }
 
     .main-container {
-        display: flex;
-        
+        display: flex;        
         width: 100%;
         flex-direction: column;
         align-items: center;
-        padding: 0 50px;
-        box-sizing: border-box;
     }
     
     /** header **/
@@ -482,9 +478,7 @@ footer .assistance{
         display: flex;  
         align-items: center;
         max-width: 1024px;
-        width: 100%; 
-        box-sizing: border-box;
-        padding: 0 50px;
+        width: 100%;
     }
 
     /** Hebergement et populaire **/
@@ -499,30 +493,23 @@ footer .assistance{
     .hebergements {
         display: flex;
         flex-direction: column;
-        align-items: center; 
         width: 100%;
-        max-width: 1024px;
-        box-sizing: border-box;
-        padding: 0 50px;
     }
 
     /** Filtres **/ 
     .filtres {
         display: flex;
-        max-width: 1024px;
+        scale: 0.75;
         width: 100%;
-        box-sizing: border-box;
-        padding: 0 50px;
-        align-items: flex-start; 
-    }
+        transform-origin: left;
+        
+        }
 
     /** Info **/ 
     .info {
         display: flex;
-        max-width: 1024px;
+        flex-shrink: 0;
         width: 100%;
-        box-sizing: border-box;
-        padding: 0 50px;
         align-items: flex-start; 
     }
 
@@ -548,6 +535,11 @@ footer .assistance{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    /** Activité **/ 
+    .activite-section{
+        width: 100%;
     }
 }
 
