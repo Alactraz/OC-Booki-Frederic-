@@ -50,6 +50,11 @@ a {
 
 .card-title {
     font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .euro {
@@ -260,6 +265,7 @@ img#logo{
 
 .hebergements-card .card-subtitle {
     margin: 0;
+    margin-bottom: 8px;
 }
 
 .hebergement-card .card-rating {
