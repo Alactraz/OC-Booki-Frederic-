@@ -727,6 +727,25 @@ footer .assistance{
         width: 300%;
     }
 
+    /** Footer **/ 
+    footer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .a-propos{
+        margin: 0px 30px 0px 30px;
+        width: 90%;
+    }
+    .nos-hébergements{
+        margin: 0px 30px 0px 30px;
+        width: 90%;
+    }
+    .assistance{
+        margin: 0px 30px 0px 30px;
+        width: 90%;
+    }
+    
+
 
     
     
