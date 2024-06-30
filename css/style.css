@@ -27,7 +27,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    padding: 0 50px;
+    padding: 5px 50px 0 50px;
     box-sizing: border-box;
 }
 
@@ -112,9 +112,10 @@ img#logo{
     width: 200px;
     text-align: center;
     padding-top: 14px;
+    border-top: 3px solid transparent
 }
 .hebergement:hover a, .activites:hover a, .hebergement:focus a, .activites:focus a, .hebergement:active a, .activites:active a{
-    color: #0065FC; 
+    color: #0065FC;
 }  
 .hebergement:hover, .activites:hover, .hebergement:focus, .activites:focus, .hebergement:active, .activites:active{
     border-top: 3px solid #0065FC;;
@@ -512,6 +513,9 @@ footer .assistance{
     .populaires {
         width: 100%;
         margin-top: 50px;
+    }
+    .populaires .populaires-title {
+        margin-bottom: 30px;
     }
 
     .populaires-cards {
