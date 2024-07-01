@@ -105,6 +105,9 @@ img#logo{
     font-weight: 500;
     justify-content: flex-end;
 }
+.menu .hebergement{
+    margin-right: 69px;
+}
 .menu:hover{
     font-weight: 500;
 }
@@ -123,6 +126,12 @@ img#logo{
 }
 
 /****** Barre de Recherche ******/
+.search-bar h1{
+    margin-bottom: 0px;
+}
+.search-bar p{
+    margin-top: 8px;
+}
 .recherche_bord{
     width: 400px;
     border-radius: 10px;
