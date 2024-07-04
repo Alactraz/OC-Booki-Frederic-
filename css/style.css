@@ -66,7 +66,7 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: lightgrey
 }
 
 .flexcentre{
@@ -570,14 +570,14 @@ footer .assistance{
     .activite .cards{
         max-width: 193.5px;
         width: 100%;
-        max-height: 245px;
+        max-height: 255px;
         margin: 0px;
-        
     }
-    .activite-cards .cards img{
-        max-width: 193.5px;
+    .activite a .cards img{
+        max-width: 194px;
         width: 100%;
         max-height: 200px;
+        height: 100%;
     }
     .activite-cards .cards h3{
         font-size: 0.8em;
@@ -708,7 +708,7 @@ footer .assistance{
         width: 100%;
         margin-bottom: 15px;
         grid-template-columns: 1fr;
-        background-color: var(--main-bg-color);
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
 
     /** Populaire tel **/
@@ -726,8 +726,11 @@ footer .assistance{
     }
     /** Forme des sections **/ 
     .hebergements-and-populaires section{
-        border-radius: 0px
+        border-radius: 0px;
     }
+    .hebergements-and-populaires .hebergements{
+        background-color: white;
+    }   
 
     /** Activité téléphone **/
     .activite-grid {
@@ -738,6 +741,7 @@ footer .assistance{
     .activite a .cards img {
         max-height: 190px;
         height: 100%;
+        max-width: 768px;
     }
     .activite a .cards {
     max-width: 768px;
