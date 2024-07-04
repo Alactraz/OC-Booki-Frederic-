@@ -57,8 +57,7 @@ a {
     margin-bottom: 8px;
     margin-top: 4px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;
+    overflow: clip;
     text-overflow: ellipsis;
 }
 
@@ -86,7 +85,7 @@ a {
     align-items: center;
 }
 
-/* header */ 
+/* header */
 header{
     display: flex;
     justify-content: space-between;
@@ -94,12 +93,12 @@ header{
 }
 .logo{
     align-items: flex-end;
-    padding: 0px;    
+    padding: 0px;
 }
 img#logo{
     height: 19px;
 }
- 
+
 .menu{
     display: flex;
     font-weight: 500;
@@ -119,10 +118,10 @@ img#logo{
 }
 .hebergement:hover a, .activites:hover a, .hebergement:focus a, .activites:focus a, .hebergement:active a, .activites:active a{
     color: #0065FC;
-}  
+}
 .hebergement:hover, .activites:hover, .hebergement:focus, .activites:focus, .hebergement:active, .activites:active{
     border-top: 3px solid #0065FC;;
-    color: #0065FC;  
+    color: #0065FC;
 }
 
 /****** Barre de Recherche ******/
@@ -137,7 +136,7 @@ img#logo{
     width: 400px;
     border-radius: 10px;
     border: 1px solid lightgrey;
-    
+
 }
 .recherche_icon{
     height: 50px;
@@ -173,7 +172,7 @@ img#logo{
     border: none;
 }
 
-/****** Filtres *******/ 
+/****** Filtres *******/
 .marge_filtres{
     margin-top: 50px;
     margin-bottom: 40px;
@@ -184,7 +183,7 @@ img#logo{
     width: max-content;
 }
 .titre_filtres{
-    margin-right: 20px;    
+    margin-right: 20px;
 }
 .filtre_icon_text{
     border: 2px solid lightgrey;
@@ -250,7 +249,7 @@ img#logo{
 }
 .hebergements {
     width: 67%;
-    border-style: none; 
+    border-style: none;
     margin-right: 40px;
 }
 
@@ -281,9 +280,9 @@ img#logo{
 }
 .hebergements .hebergements-card{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,minmax(100px,1fr));
     grid-template-rows: repeat(2,auto);
-    height: fit-content; 
+    height: fit-content;
     gap: 30px;
 }
 .hebergements-card{
@@ -360,21 +359,19 @@ img#logo{
     font-size: 22px;
 }
 .activite h3{
-    width: 100%;
     margin-top: 15px;
-    margin-left: 19px;
-    margin-right: 19px;
+    padding-left: 19px;
+    padding-right: 19px;
     font-weight: bold;
     max-font-size: 16px;
-    font-size: 100%;
-    overflow: hidden;
+    overflow: clip;
     text-overflow: ellipsis;
 }
 .activite-grid{
-    display: flex;
+    display: grid;
     max-width: 1440px;
     width: 100%;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,minmax(100px,1fr));
     box-sizing: border-box;
     gap: 30px;
 }
@@ -393,12 +390,12 @@ img#logo{
 }
 .activite a {
     display: flex;
-    /* max-width: 290px; */
+    flex: 1;
     width: 100%;
 }
 
 .activite a .cards {
-    flex: 1 1 auto;
+    flex: 1 1 100%;
     min-width: 0;
     max-width: 290px;
     width: 100%;
@@ -512,6 +509,7 @@ footer .assistance{
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-right: 0px;
     }
 
     /** Filtres **/ 
@@ -521,6 +519,10 @@ footer .assistance{
         width: 100%;
         transform-origin: left;
         }
+    .filtre_texte{
+        display: flex;
+        flex-shrink: 0;
+    }
 
     /** Info **/ 
     .info {
@@ -537,8 +539,11 @@ footer .assistance{
     }
     .populaires .populaires-title {
         margin-bottom: 30px;
+        margin-bottom: 0px;
     }
-
+    .populaires .card{
+         margin-top: 0px;
+    }
     .populaires-cards {
         display: flex;
         flex-direction: row;
@@ -566,6 +571,7 @@ footer .assistance{
         width: 100%;
         max-height: 245px;
         margin: 0px;
+        
     }
     .activite-cards .cards img{
         max-width: 193.5px;
@@ -716,34 +722,30 @@ footer .assistance{
         width: 320%;
     }
     .card a{
-        width: 100%
+        width: inher
     }
 
     /** Activité téléphone **/
-    .activite{
-        max-width: 768px;
-    }
     .activite-grid{
-        display: flex;
-        flex-direction: column;
+        display:grid;
+        grid-template-columns: 1 fr;
     }
-    .activite a{
+      .activite .cards{
         max-width: 768px;
-    }
-    .activite .cards{
-        max-width:768px;
         width: 100%;
         max-height: 200px;
+        margin-bottom: 15px;
+        
     }
-    .activite .cards img{
-        max-width:768px;
-        max-height: 141px;
+    .activite-cards .cards img{
+        max-width: 768px;
+        width: 100%;
     }
-    
     /** Footer **/ 
     footer{
         width: 100%;
         flex-direction: column;
+        gap: 50px;
     }
     .a-propos{
         margin: 0px 30px 0px 30px;
