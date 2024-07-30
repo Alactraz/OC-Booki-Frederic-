@@ -598,7 +598,7 @@ footer li{
     /** général **/ 
     main{
         max-width: 768px;
-        min-width: 360px;
+        min-width: 320px;
         width: 100%;
     }
     .main-container{
